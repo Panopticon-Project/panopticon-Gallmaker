@@ -1,3 +1,7 @@
+![alt tag](https://user-images.githubusercontent.com/24201238/29351849-9c3087b4-82b8-11e7-8fed-350e3b8b4945.png)
+
+# Panopticon Project
+
 ## Name - Gallmaker
 * Label - Advanced Persistent Threat (APT)
 
@@ -144,6 +148,75 @@ The most interesting aspect of Gallmaker’s approach is that the group doesn’
     The Rex PowerShell library, which is publicly available on GitHub, is also seen on victim machines. This library helps create and manipulate PowerShell scripts for use with Metasploit exploits. 
 
 Gallmaker is using three primary IP addresses for its C&C infrastructure to communicate with infected devices. There is also evidence that it is deleting some of its tools from victim machines once it is finished, to hide traces of its activity.
+
+![alt tag](https://user-images.githubusercontent.com/24201238/49002038-557d6c80-f1c3-11e8-86c7-d3f5545070a3.png)
+
+The DDE protocol can be used for legitimate purposes to send messages between Microsoft applications that share data through shared memory, e.g. to share data between Excel and Word. 
+
+However, the DDE protocol was flagged as unsecure last year, when researchers discovered it could be exploited to execute code on victim machines via Excel and Word, without macros being enabled in those applications. Microsoft said at the time that this capability was a feature and the company did not consider it a vulnerability because Office always warned users before enabling DDE in documents, as seen in Figure 1. However, after the DDE protocol was subsequently exploited in a number of malware campaigns, Microsoft issued an update to Office in December 2017 that disabled DDE by default in Word and Excel. DDE can be enabled manually after this update is applied but only if the registry is altered by an admin account.
+
+The Gallmaker victims we have seen did not have this patch installed and therefore were still vulnerable to exploit via the DDE protocol.
+Gallmaker’s activity appears to be highly targeted, with its victims all related to government, military, or defense sectors. Several targets are embassies of an Eastern European country. The targeted embassies are located in a number of different regions globally, but all have the same home country.
+
+The other targets we have seen are a Middle Eastern defense contractor and a military organization. There are no obvious links between the Eastern European and Middle Eastern targets, but it is clear that Gallmaker is specifically targeting the defense, military, and government sectors: its targets appear unlikely to be random or accidental.
+
+Gallmaker’s activity has been quite consistent since we started tracking it. The group has carried out attacks most months since December 2017. Its activity subsequently increased in the second quarter of 2018, with a particular spike in April 2018.
+Gallmaker’s activity points strongly to it being a cyber espionage campaign, likely carried out by a state-sponsored group.
+The fact that Gallmaker appears to rely exclusively on LotL tactics and publicly available hack tools makes its activities extremely hard to detect. We have written extensively about the increasing use of LotL tools and publicly available hack tools by cyber criminals. One of the primary reasons for the increased popularity of these kinds of tools is to avoid detection; attackers are hoping to “hide in plain sight”, with their malicious activity hidden in a sea of legitimate processes.
+The following protections are in place to protect customers against Gallmaker attacks:
+
+    System Infected: Meterpreter Reverse TCP
+
+    W97M.Downloader
+
+Network protection products also detect activity associated with Gallmaker.
+Indicators of Compromise
+
+The following indicators are specific to Gallmaker:
+Network
+
+    111[.]90.149.99/o2
+    94[.]140.116.124/o2
+    94[.]140.116.231/o2
+
+Filenames
+
+    bg embassy list.docx
+    Navy.ro members list.docx
+    БГ в чуждите медии 23.03.2018-1.docx
+    [REDACTED] and cae join forces to develop integrated live virtual constructive training solutions.docx
+    А-9237-18-brasil.docx
+
+Gallmaker also used tools that were available in open source projects. Yara rule and methods shared below were used by Gallmaker but aren't exclusive to the group's activity. Detection of these in one's environment is only indicative of possible unauthorized activity. Each occurrence of triggers must be examined to determine intent.
+
+rule Suspicious_docx
+{
+meta:
+copyright = "Symantec"
+family = "Suspicious DOCX”
+group = "Gallmaker"
+description = "Suspicious file that might be Gallmaker”
+
+strings:
+$quote = /<w:fldSimple w:instr=" QUOTE (( [^"]+)* [0-9]
+
+{2,3}
+
+)
+
+{4}
+
+/
+$text = "select \"Update field\" and click \"OK\""
+
+condition:
+any of them
+}
+
+Use of Rex Powershell - https://github.com/rapid7/rex-powershell
+
+Use of obfuscated shellcode executed via PowerShell to download a "reverse_tcp" payload from Metasploit
+onto victim systems. For example, msfvenom -p windows/meterpreter/reverse_tcp -o payload.bin
 ## Links - end of footer
 Any new articles would be added here.
 
