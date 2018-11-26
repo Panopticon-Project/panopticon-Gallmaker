@@ -1,8 +1,6 @@
-## Name - start of header
-Common name of the threat actor. Use one of the listed labels.
-* Label - Advanced Persistent Threat (APT) / Corporation / Nation State
+## Name - Gallmaker
+* Label - Advanced Persistent Threat (APT)
 
-## Aliases
 Other names the threat actor is known by.
 Use list
 * [Alias](URL to source)
@@ -113,6 +111,11 @@ Use list
 ## Raw Intelligence - start of footer
 Any further notes to be added to the framework would be added here.
 
+10 October 2018 https://www.securityweek.com/cyberspy-group-gallmaker-targets-military-government-organizations
+A previously undocumented cyber espionage group has been targeting entities in the government, military and defense sectors since at least 2017, according to a report published on Wednesday by Symantec.
+Symantec researchers noted that Gallmaker attacks appear highly targeted, with all known victims being related to the government, military or defense sectors.
+Asked by SecurityWeek about links to other threat actors and the possible location of the hackers, Symantec noted that it tracks Gallmaker as a new cyber espionage group and said it had no information to share on who may be behind the attacks or where the attackers are located.
+The security firm pointed out that Gallmaker is interesting because it does not use any actual malware in its operations and instead relies on publicly available tools – this is known in the industry as "living off the land."
 ## Links - end of footer
 Any new articles would be added here.
 
