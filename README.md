@@ -116,6 +116,34 @@ A previously undocumented cyber espionage group has been targeting entities in t
 Symantec researchers noted that Gallmaker attacks appear highly targeted, with all known victims being related to the government, military or defense sectors.
 Asked by SecurityWeek about links to other threat actors and the possible location of the hackers, Symantec noted that it tracks Gallmaker as a new cyber espionage group and said it had no information to share on who may be behind the attacks or where the attackers are located.
 The security firm pointed out that Gallmaker is interesting because it does not use any actual malware in its operations and instead relies on publicly available tools – this is known in the industry as "living off the land."
+The threat actor, tracked by the security firm as Gallmaker, has launched attacks on several overseas embassies of an unnamed Eastern European country, and military and defense organizations in the Middle East.
+The group has been active since at least December 2017 and its most recent attacks were observed in June 2018 – a spike in Gallmaker activity was seen in April. Gallmaker has focused on cyber espionage and experts believe it's likely sponsored by a nation state.
+Gallmaker attacks start with a specially crafted Office document most likely delivered via phishing emails. The documents are designed to exploit the Dynamic Update Exchange (DDE) protocol to execute commands in the memory of the targeted device.
+"By running solely in memory, the attackers avoid leaving artifacts on disk, which makes their activities difficult to detect," Symantec's Attack Investigations Team wrote in a blog post.
+Microsoft disabled DDE last year after malicious actors started exploiting it in their attacks. However, Symantec said Gallmaker victims failed to install the Microsoft update that disabled the problematic feature.
+Once they gain access to a machine, the attackers use various tools to achieve their objectives. The list includes the reverse_tcp reverse shell from Metasploit, the WindowsRoamingToolsTask PowerShell scheduler, the WinZip console, and an open source library named Rex PowerShell, which helps create PowerShell scripts for Metasploit exploits.
+Researchers also noticed that the attackers have deleted some of their tools from compromised machines once they were done, likely in an effort to hide their activities.
+
+11 October 2018 https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group
+Symantec researchers have uncovered a previously unknown attack group that is targeting government and military targets, including several overseas embassies of an Eastern European country, and military and defense targets in the Middle East. This group eschews custom malware and uses living off the land (LotL) tactics and publicly available hack tools to carry out activities that bear all the hallmarks of a cyber espionage campaign.
+The group, which we have given the name Gallmaker, has been operating since at least December 2017, with its most recent activity observed in June 2018.
+The most interesting aspect of Gallmaker’s approach is that the group doesn’t use malware in its operations.  Rather, the attack activity we observed is carried out exclusively using LotL tactics and publicly available hack tools. The group takes a number of steps to gain access to a victim’s device and then deploys several different attack tools, as follows:
+
+    The group delivers a malicious Office lure document to victims, most likely via a spear-phishing email.
+    These lure documents use titles with government, military, and diplomatic themes, and the file names are written in English or Cyrillic languages. These documents are not very sophisticated, but evidence of infections shows that they’re effective. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe, including:
+
+    bg embassy list.docx
+    Navy.ro members list.docx - maybe romania?
+
+    These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content” (See Figure 1). Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artifacts on disk, which makes their activities difficult to detect.
+    Once the Gallmaker attackers gain access to a device, they execute various tools, including:
+
+    WindowsRoamingToolsTask: Used to schedule PowerShell scripts and tasks.
+    A "reverse_tcp" payload from Metasploit: The attackers use obfuscated shellcode that is executed via PowerShell to download this reverse shell.
+    A legitimate version of the WinZip console: This creates a task to execute commands and communicate with the command-and-control (C&C) server. It’s likely this WinZip console is used to archive data, probably for exfiltration.
+    The Rex PowerShell library, which is publicly available on GitHub, is also seen on victim machines. This library helps create and manipulate PowerShell scripts for use with Metasploit exploits. 
+
+Gallmaker is using three primary IP addresses for its C&C infrastructure to communicate with infected devices. There is also evidence that it is deleting some of its tools from victim machines once it is finished, to hide traces of its activity.
 ## Links - end of footer
 Any new articles would be added here.
 
