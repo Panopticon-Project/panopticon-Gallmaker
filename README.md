@@ -6,36 +6,61 @@
 * Label - Advanced Persistent Threat (APT)
 
 Other names the threat actor is known by.
-Use list
-* [Alias](URL to source)
-* [Alias](URL to source)
+* [N/A](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
 
-## Overview - end of header
+## Overview 
 A high level summary of the threat actor.
 Use list
 * Description goes here
 *
 
-## Campaign or Date Range - start of repeatable time contextual section 
-Use either a campaign with a specific timeframe or a date range not associated with a specifc campaign. About is a short description of the campaign and should be removed if using date range. Dates should be in the format of DD Month Year e.g. 01 January 2019.
-* Campaign / Date Range
-* About - [Targetting infrastructure in South East Asia](URL to source) / Remove is using date range
-* Active from - XX Month 20XX
-* Active to - XX Month 20XX
+## Campaign or Date Range
+* Date Range
+* About - [Targeting the overseas embassies of an Eastern European nation, a Middle Eastern defense contractor and a military organization](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group) 
+* Active from - 01 December 2017
+* Active to - 30 June 2018
 
 ### Attributes
 Listed after Camapign or Date Range as attributes can shift over time. Use one of the resource levels. Use one of the sophistication grades. Amateur is defined as using all prewritten tools and/or showing overall poor tradecraft. Expert is defined as using at least some self written tools and/or showing overall good tradecraft. Advanced Expert is defined as consistently using self written tools adnd showing consistently good tradecraft. Primary activity is a short description of what the groups mostly does.
-* Resource level - [Individual / Group / Corporation / Government](URL to source)
-* Sophistication - [Amateur / Expert / Advanced Expert](URL to source)
+* Resource level - [Government](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* Sophistication - [Expert](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
 * Primary activities - Description goes here
 
 ### Attack Pattern
-A type of Tactics, Techniques, and Procedures (TTP) that describes ways threat actors attempt to compromise targets. Malware should have a short escription and be detailed below.
-Use list
-* [Attack Pattern](URL to source)
-* [Attack Pattern](URL to source)
-* Malware - Description goes here
-
+The type of Tactics, Techniques, and Procedures (TTP) that describes ways threat actors attempt to compromise targets. 
+* Initial Access 
+  * [Spearphishing Attachment](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * The group delivers a malicious Office lure document to victims, most likely via a spear-phishing email. These lure documents use titles with government, military, and diplomatic themes, and the file names are written in English or Cyrillic languages. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe, including: bg embassy list.docx and Navy.ro members list.docx 
+* Execution
+  * [Dynamic Data Exchange](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content” (See Figure 1). Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system.
+* Persistance
+  * [Web Shell](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * Description
+* Privilege Escalation 
+  * [Attack Pattern](URL to source)
+  * Description
+* Defense Evasion 
+  * [Attack Pattern](URL to source)
+  * Description
+* Credential Access
+  * [Attack Pattern](URL to source)
+  * Description
+* Discovery
+  * [Attack Pattern](URL to source)
+  * Description
+* Lateral Movement
+  * [Attack Pattern](URL to source)
+  * Description
+* Collection
+  * [Attack Pattern](URL to source)
+  * Description
+* Exfiltration 
+  * [Attack Pattern](URL to source)
+  * Description
+* Command and Control 
+  * [Attack Pattern](URL to source)
+  * Description
 
 ### Vulnerabilities
 A mistake in software that can be directly used by an attacker to gain access to a system or network. Link to a writeup in the exploit repo where possible (example, CVEs) or to external sources. Format should be in the format of ulnerability is exploited by name of the thing exploiting it, usually malware or a hacking tool.
