@@ -27,7 +27,6 @@ Listed after Camapign or Date Range as attributes can shift over time. Use one o
 * Primary activities - Description goes here
 
 ### Attack Pattern
-The type of Tactics, Techniques, and Procedures (TTP) that describes ways threat actors attempt to compromise targets. 
 * Initial Access 
   * [Spearphishing Attachment](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
   * The group delivers a malicious Office lure document to victims, most likely via a spear-phishing email. These lure documents use titles with government, military, and diplomatic themes, and the file names are written in English or Cyrillic languages. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe, including: bg embassy list.docx and Navy.ro members list.docx 
@@ -36,31 +35,25 @@ The type of Tactics, Techniques, and Procedures (TTP) that describes ways threat
   * These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content” (See Figure 1). Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system.
 * Persistance
   * [Web Shell](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-  * Description
+  * Once the Gallmaker attackers gain access to a device, they execute various tools. WindowsRoamingToolsTask is used to schedule PowerShell scripts and tasks. A "reverse_tcp" payload from Metasploit is used. The attackers use obfuscated shellcode that is executed via PowerShell to download this reverse shell. The Rex PowerShell library, which is publicly available on GitHub, is also seen on victim machines. This library helps create and manipulate PowerShell scripts for use with Metasploit exploits. 
 * Privilege Escalation 
-  * [Attack Pattern](URL to source)
-  * Description
+  * No information
 * Defense Evasion 
-  * [Attack Pattern](URL to source)
-  * Description
+  * No information
 * Credential Access
-  * [Attack Pattern](URL to source)
-  * Description
+  * No information
 * Discovery
-  * [Attack Pattern](URL to source)
-  * Description
+  * No information
 * Lateral Movement
-  * [Attack Pattern](URL to source)
-  * Description
+  * No information
 * Collection
-  * [Attack Pattern](URL to source)
-  * Description
+  * No information
 * Exfiltration 
-  * [Attack Pattern](URL to source)
-  * Description
+  * [Exfiltration Over Alternative Protocol](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * A legitimate version of the WinZip console: This creates a task to execute commands and communicate with the command-and-control (C&C) server. It’s likely this WinZip console is used to archive data, probably for exfiltration. WinZip supports FTP.
 * Command and Control 
-  * [Attack Pattern](URL to source)
-  * Description
+  * [Remote File Copy](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * A legitimate version of the WinZip console: This creates a task to execute commands and communicate with the command-and-control (C&C) server. It’s likely this WinZip console is used to archive data, probably for exfiltration.
 
 ### Vulnerabilities
 A mistake in software that can be directly used by an attacker to gain access to a system or network. Link to a writeup in the exploit repo where possible (example, CVEs) or to external sources. Format should be in the format of ulnerability is exploited by name of the thing exploiting it, usually malware or a hacking tool.
