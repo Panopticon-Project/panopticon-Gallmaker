@@ -14,6 +14,8 @@ Use list
 * Description goes here
 *
 
+## Time context starts
+
 ## Campaign or Date Range
 * Date Range
 * About - [Targeting the overseas embassies of an Eastern European nation, a Middle Eastern defense contractor and a military organization](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group) 
@@ -57,54 +59,6 @@ Listed after Camapign or Date Range as attributes can shift over time. Use one o
 
 ### Vulnerabilities
 * No information
-
-### Detection
-An action taken to detect an Attack Pattern entry. These should address the Attack Patterns listed above. State no information if no information is available.
-Use list
-* [Spearphishing Attachment](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-  * Network intrusion detection systems can be used to detect spearphishing with malicious attachments in transit.
-  * Email gateways can be used to detect spearphishing with malicious attachments in transit. 
-  * Detonation chambers may also be used to identify malicious attachments.  
-  * Anti-virus can potentially detect malicious documents and attachments as they're scanned to be stored on the email server or on the user's computer. 
-  * Endpoint sensing or network sensing can potentially detect malicious events once the attachment is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning Powershell.exe) for techniques such as Exploitation for Client Execution and Scripting.
-* [Dynamic Data Exchange](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-  * OLE and Office Open XML files can be scanned for ‘DDEAUTO', ‘DDE’, and other strings indicative of DDE execution. 
-  * Monitor for Microsoft Office applications loading DLLs and other modules not typically associated with the application.
-  * Monitor for spawning of unusual processes (such as cmd.exe) from Microsoft Office applications. 
-* [Web Shell](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-  * Process monitoring may be used to detect Web servers that perform suspicious actions such as running cmd or accessing files that are not in the Web directory. 
-  * File monitoring may be used to detect changes to files in the Web directory of a Web server that do not match with updates to the Web server's content and may indicate implantation of a Web shell script. Log authentication attempts to the server and any unusual traffic patterns to or from the server and internal network.
-* [Exfiltration Over Alternative Protocol](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-  * Follow best practices for network firewall configurations to allow only necessary ports and traffic to enter and exit the network. For example, if services like FTP are not required for sending information outside of a network, then block FTP-related ports at the network perimeter. 
-  * Enforce proxies and use dedicated servers for services such as DNS and only allow those systems to communicate over respective ports/protocols, instead of all systems within a network. 
-  * Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary command and control infrastructure and malware can be used to mitigate activity at the network level. 
-* [Remote File Copy](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-  * Monitor for file creation and files transferred within a network over SMB. 
-  * Unusual processes with external network connections creating files on-system may be suspicious. 
-  * Use of utilities, such as FTP, that does not normally occur may also be suspicious. 
-  * Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). 
-  * Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. 
-  * Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used.
-
-### Course of Action 
-An action taken to either prevent an attack or respond to an attack. If the course of action is connected to something in this report, such as a CVE for example, that should be referenced. Example: Apply patch 5678 to ICS systems to patch CVE-2019-0254.
-Use list
-* [Spearphishing Attachment](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-  * Network intrusion prevention systems and systems designed to scan and remove malicious email attachments can be used to block activity. 
-  * Block unknown or unused attachments by default that should not be transmitted over email as a best practice to prevent some vectors, such as .scr, .exe, .pif, .cpl, etc. Some email scanning devices can open and analyze compressed and encrypted formats, such as zip and rar that may be used to conceal malicious attachments in Obfuscated Files or Information.
-  * Users can be trained to identify social engineering techniques and spearphishing emails. 
-  * To prevent the attachments from executing, application whitelisting can be used. 
-  * Anti-virus can also automatically quarantine suspicious files.
-* [Dynamic Data Exchange](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-  * Registry keys specific to Microsoft Office feature control security can be set to disable automatic DDE/OLE execution. [1](https://docs.microsoft.com/en-us/security-updates/securityadvisories/2017/4053440) [2](https://www.bleepingcomputer.com/news/microsoft/microsoft-disables-dde-feature-in-word-to-prevent-further-malware-attacks/) [3](https://gist.github.com/wdormann/732bb88d9b5dd5a66c9f1e1498f31a1b).
-  * Ensure Protected View is enabled and consider disabling embedded files in Office programs, such as OneNote, not enrolled in Protected View.
-  * On Windows 10, enable Attack Surface Reduction (ASR) rules to prevent DDE attacks and spawning of child processes from Office programs.
-* [Web Shell](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-  * 
-* [Exfiltration Over Alternative Protocol](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-  * 
-* [Remote File Copy](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-  * 
 
 ### Identity
 Individuals, organizations, or groups. These are represented as individual entries under the heading of Identity.
@@ -161,7 +115,55 @@ A tool used by the attacker. Multiple names should be listed on the same line an
 * Functionality - [Functionality, functionality] (URL to source)
 * URL - http://address.com
 
-### Reports - emd of repeatable time contextual section 
+## Time context ends 
+
+### Detection
+* [Spearphishing Attachment](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * Network intrusion detection systems can be used to detect spearphishing with malicious attachments in transit.
+  * Email gateways can be used to detect spearphishing with malicious attachments in transit. 
+  * Detonation chambers may also be used to identify malicious attachments.  
+  * Anti-virus can potentially detect malicious documents and attachments as they're scanned to be stored on the email server or on the user's computer. 
+  * Endpoint sensing or network sensing can potentially detect malicious events once the attachment is opened (such as a Microsoft Word document or PDF reaching out to the internet or spawning Powershell.exe) for techniques such as Exploitation for Client Execution and Scripting.
+* [Dynamic Data Exchange](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * OLE and Office Open XML files can be scanned for ‘DDEAUTO', ‘DDE’, and other strings indicative of DDE execution. 
+  * Monitor for Microsoft Office applications loading DLLs and other modules not typically associated with the application.
+  * Monitor for spawning of unusual processes (such as cmd.exe) from Microsoft Office applications. 
+* [Web Shell](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * Process monitoring may be used to detect Web servers that perform suspicious actions such as running cmd or accessing files that are not in the Web directory. 
+  * File monitoring may be used to detect changes to files in the Web directory of a Web server that do not match with updates to the Web server's content and may indicate implantation of a Web shell script. Log authentication attempts to the server and any unusual traffic patterns to or from the server and internal network.
+* [Exfiltration Over Alternative Protocol](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * Follow best practices for network firewall configurations to allow only necessary ports and traffic to enter and exit the network. For example, if services like FTP are not required for sending information outside of a network, then block FTP-related ports at the network perimeter. 
+  * Enforce proxies and use dedicated servers for services such as DNS and only allow those systems to communicate over respective ports/protocols, instead of all systems within a network. 
+  * Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary command and control infrastructure and malware can be used to mitigate activity at the network level. 
+* [Remote File Copy](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * Monitor for file creation and files transferred within a network over SMB. 
+  * Unusual processes with external network connections creating files on-system may be suspicious. 
+  * Use of utilities, such as FTP, that does not normally occur may also be suspicious. 
+  * Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). 
+  * Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. 
+  * Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used.
+
+### Course of Action 
+* [Spearphishing Attachment](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * Network intrusion prevention systems and systems designed to scan and remove malicious email attachments can be used to block activity. 
+  * Block unknown or unused attachments by default that should not be transmitted over email as a best practice to prevent some vectors, such as .scr, .exe, .pif, .cpl, etc. Some email scanning devices can open and analyze compressed and encrypted formats, such as zip and rar that may be used to conceal malicious attachments in Obfuscated Files or Information.
+  * Users can be trained to identify social engineering techniques and spearphishing emails. 
+  * To prevent the attachments from executing, application whitelisting can be used. 
+  * Anti-virus can also automatically quarantine suspicious files.
+* [Dynamic Data Exchange](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * Registry keys specific to Microsoft Office feature control security can be set to disable automatic DDE/OLE execution. [1](https://docs.microsoft.com/en-us/security-updates/securityadvisories/2017/4053440) [2](https://www.bleepingcomputer.com/news/microsoft/microsoft-disables-dde-feature-in-word-to-prevent-further-malware-attacks/) [3](https://gist.github.com/wdormann/732bb88d9b5dd5a66c9f1e1498f31a1b).
+  * Ensure Protected View is enabled and consider disabling embedded files in Office programs, such as OneNote, not enrolled in Protected View.
+  * On Windows 10, enable Attack Surface Reduction (ASR) rules to prevent DDE attacks and spawning of child processes from Office programs.
+* [Web Shell](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * Ensure that externally facing Web servers are patched regularly to prevent adversary access through Exploitation of Vulnerability to gain remote code access or through file inclusion weaknesses that may allow adversaries to upload files or scripts that are automatically served as Web pages.
+  * Audit account and group permissions to ensure that accounts used to manage servers do not overlap with accounts and permissions of users in the internal network that could be acquired through Credential Access and used to log into the Web server and plant a Web shell or pivot from the Web server into the internal network.
+* [Exfiltration Over Alternative Protocol](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * Follow best practices for network firewall configurations to allow only necessary ports and traffic to enter and exit the network. For example, if services like FTP are not required for sending information outside of a network, then block FTP-related ports at the network perimeter. Enforce proxies and use dedicated servers for services such as DNS and only allow those systems to communicate over respective ports/protocols, instead of all systems within a network. 
+  * Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary command and control infrastructure and malware can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific obfuscation technique used by a particular adversary or tool, and will likely be different across various malware families and versions. 
+* [Remote File Copy](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware or unusual data transfer over known tools and protocols like FTP can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific obfuscation technique used by a particular adversary or tool, and will likely be different across various malware families and versions.
+  
+### Reports
 Collections of threat intelligence focused on one or more topics, such as a description of a threat actor, malware, or attack technique, including contextual details. The description should be a short outline of the report.
 Use list
 * [Name of report](URL to pdf/blog post etc) - Description goes here
