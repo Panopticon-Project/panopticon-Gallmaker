@@ -58,36 +58,27 @@ Listed after Camapign or Date Range as attributes can shift over time. Use one o
   * A legitimate version of the WinZip console: This creates a task to execute commands and communicate with the command-and-control (C&C) server. It’s likely this WinZip console is used to archive data, probably for exfiltration.
 
 ### Vulnerabilities
-* No information
+* [No information](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
 
 ### Identity
-Individuals, organizations, or groups. These are represented as individual entries under the heading of Identity.
 
 #### Individuals 
-Specific members of 
-Use list
-* [Name](URL to source)
-* [Name](URL to source)
+* [No information](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
 
 #### Affiliated organisations
-Use list
-* [Organisation](URL to source)
-* [Organisation](URL to source)
+* [No information](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
 
 #### Affiliated groups
-Use list
-* [Group](URL to source)
-* [Group](URL to source)
+* [No information](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
 
 ### Intrusion Set
 A grouped set of adversarial behaviors and resources with common properties believed to be orchestrated by a single threat actor. These are represented as individual categories under the heading of Intrusion Set. If an existing category does not cover what you need to add, contact a project mantainer on panopticonproject at protonmail dot com to add a section to Charon.
 
 #### Malware
-Details of malware used. Multiple names should be listed on the same line and separated by a comma. Functionality should be short, preferably one word. Example: keylogger. Multiple functionalites should be listed on the same line and separated by a comma. Hash should have a -, the type of hashing function used, another -, and the hash itself. Example: Hash - MD5 - 002ae76872d80801692ff942308c64t6. Notes should be a short description of anything else important, like the family the malware belongs to or variants.
-* Names - [Name of malware](URL to source)
-* Functionality - [Functionality, functionality] (URL to source)
-* Hash - [Function] - [Actual hash](URL to source)
-* Notes - Description goes here
+* Names - [No information](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* Functionality - N/A
+* Hash - N/A
+* Notes - N/A
 
 #### Website 
 A website used by the attacker. URLs should be in the format of hxxp so people don't accidentablly navigate to the URL by clicking on it. IP addresses shouldhave square brackets [] arond the last separator so people don't accidentally navigate to the address. Dates should be in the format of DD Month Year e.g. 01 January 2019.
