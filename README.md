@@ -94,22 +94,83 @@ A server used by the attackers to send commands to malware and to receive comman
 * IP - [111.90.149[.]99](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
 * Valid from - [01 January 2018](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
 * Valid to - [31 May 2018](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* Notes - Date range given in source is December 2017 to June 2018. As there is no exact date given, it is possible activity reted to this address in early December and late June could be related to a different party. A date range of January 
+* SSH host key
+  * RSA - no information
+  * ECDSA - no information
+  * ED25519 - no information
+* SSL Certificate
+  * Issuer - no information
+  * Public key type - no information
+  * Public key bits - no information
+  * Signature algorithm - no information
+  * Not valid before - no information
+  * Not valid after - no information
+  * MD5 - no information
+  * SHA-1 - no information
+* Notes - Date range given in source is December 2017 to June 2018. As there is no exact date given, it is possible activity related to this address in early December and late June could be related to a different party. A date range of 01 January 2018 to 31 May 2018 is given here to avoid misattribution.
 
 * IP - [94.140.116[.]124](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* Valid from - [XX Month 20XX](URL to source)
-* Valid to - [XX Month 20XX](URL to source)
-* Notes - 
+* Valid from - [01 January 2018](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* Valid to - [31 May 2018](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* SSH host key
+  * RSA - no information
+  * ECDSA - no information
+  * ED25519 - no information
+* SSL Certificate
+  * Issuer - no information
+  * Public key type - no information
+  * Public key bits - no information
+  * Signature algorithm - no information
+  * Not valid before - no information
+  * Not valid after - no information
+  * MD5 - no information
+  * SHA-1 - no information
+* Notes - Date range given in source is December 2017 to June 2018. As there is no exact date given, it is possible activity related to this address in early December and late June could be related to a different party. A date range of 01 January 2018 to 31 May 2018 is given here to avoid misattribution.
 
 * IP - [94.140.116[.]231](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* Valid from - [XX Month 20XX](URL to source)
-* Valid to - [XX Month 20XX](URL to source)
-* Notes - 
+* Valid from - [01 January 2018](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* Valid to - [31 May 2018](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* SSH host key
+  * RSA - no information
+  * ECDSA - no information
+  * ED25519 - no information
+* SSL Certificate
+  * Issuer - no information
+  * Public key type - no information
+  * Public key bits - no information
+  * Signature algorithm - no information
+  * Not valid before - no information
+  * Not valid after - no information
+  * MD5 - no information
+  * SHA-1 - no information
+* Notes - Date range given in source is December 2017 to June 2018. As there is no exact date given, it is possible activity related to this address in early December and late June could be related to a different party. A date range of 01 January 2018 to 31 May 2018 is given here to avoid misattribution.
 
 #### Documents
-A document used by the attackers, usually as part of phishing. About should be a short description of how the document was used. Hash should have a -, the type of hashing function used, another -, and the hash itself. Example: Hash - MD5 - 002ae76872d80801692ff942308c64t6.
-* About - Description goes here
+* Filename - [bg embassy list.docx](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artifacts on disk.
+    Once the Gallmaker attackers gain access to a device, they execute various tools
 * Hash - [Function] - [Actual hash](URL to source)
+* Notes - 
+
+* Filename - [Navy.ro members list.docx](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artifacts on disk.
+* Hash - [Function] - [Actual hash](URL to source)
+* Notes - 
+
+* Filename - [БГ в чуждите медии 23.03.2018-1.docx](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artifacts on disk.
+* Hash - [Function] - [Actual hash](URL to source)
+* Notes - Tracked as W97M.Downloader
+
+* Filename - [[REDACTED] and cae join forces to develop integrated live virtual constructive training solutions.docx](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artifacts on disk.
+* Hash - [Function] - [Actual hash](URL to source)
+* Notes - Tracked as W97M.Downloader
+
+* Filename - [А-9237-18-brasil.docx](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artifacts on disk.
+* Hash - [Function] - [Actual hash](URL to source)
+* Notes - Tracked as W97M.Downloader
 
 #### Tools
 A tool used by the attacker. Multiple names should be listed on the same line and separated by a comma. Functionality should be short, preferably one word. Example: keylogger. Multiple functionalites should be listed on the same line and separated by a comma. URL should be the online address, if any, the tool can be publically sourced from.
