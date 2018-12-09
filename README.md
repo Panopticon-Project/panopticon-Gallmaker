@@ -81,19 +81,30 @@ A grouped set of adversarial behaviors and resources with common properties beli
 * Notes - N/A
 
 #### Website 
-A website used by the attacker. URLs should be in the format of hxxp so people don't accidentablly navigate to the URL by clicking on it. IP addresses shouldhave square brackets [] arond the last separator so people don't accidentally navigate to the address. Dates should be in the format of DD Month Year e.g. 01 January 2019.
-* About - Description goes here
-* URL - [hxxp://address[.]com](URL to source)
-* IP - [000.000.000[.]000](URL to source)
-* Valid from - [XX Month 20XX](URL to source)
-* Valid to - [XX Month 20XX](URL to source)
+* Name - [No information](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* About - N/A
+* URL - N/A
+* IP - N/A
+* Valid from - N/A
+* Valid to - N/A
 
 #### Command and Control Server
 A server used by the attackers to send commands to malware and to receive commands and exfiltrated information from the malware.
 * About - used by Even More Muffins malware to receive commands from and exfiltrate data to. IP addresses shouldhave square brackets [] arond the last separator so people don't accidentally navigate to the address. Dates should be in the format of DD Month Year e.g. 01 January 2019.
-* IP - [000.000.000[.]000](URL to source)
+* IP - [111.90.149[.]99](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* Valid from - [01 January 2018](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* Valid to - [31 May 2018](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* Notes - Date range given in source is December 2017 to June 2018. As there is no exact date given, it is possible activity reted to this address in early December and late June could be related to a different party. A date range of January 
+
+* IP - [94.140.116[.]124](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
 * Valid from - [XX Month 20XX](URL to source)
 * Valid to - [XX Month 20XX](URL to source)
+* Notes - 
+
+* IP - [94.140.116[.]231](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* Valid from - [XX Month 20XX](URL to source)
+* Valid to - [XX Month 20XX](URL to source)
+* Notes - 
 
 #### Documents
 A document used by the attackers, usually as part of phishing. About should be a short description of how the document was used. Hash should have a -, the type of hashing function used, another -, and the hash itself. Example: Hash - MD5 - 002ae76872d80801692ff942308c64t6.
@@ -105,7 +116,15 @@ A tool used by the attacker. Multiple names should be listed on the same line an
 * Names - [Name of malware](URL to source)
 * Functionality - [Functionality, functionality] (URL to source)
 * URL - http://address.com
-
+W97M.Downloader
+W97M.Downloader is a Word macro Trojan that downloads additional malware. W97M.Downloader is a malicious macro that may arrive as a Word document attachment in spam emails. When the Word document is opened, the macro attempts to download and execute malware from a remote location. Most spam campaigns spreading Dridex do so using attached Word documents containing a malicious macro. 
+Symantec detects these malicious attachments as  
+W97M.Downloader
+. If this macro is allowed to run, a 
+malicious .vbs file is dropped and executed. This file is detected as 
+VBS.Downloader.Trojan
+. . This malicious .vbs 
+file will in turn download and install Dridex on the victim’s computer. 
 ## Time context ends 
 
 ### Detection
