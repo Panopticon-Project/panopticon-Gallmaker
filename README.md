@@ -9,7 +9,7 @@ Other names the threat actor is known by.
 * [No information](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
 
 ## Overview 
-* As of October 2018 Gallmaker has targeted government and military targets, including several overseas embassies of an Eastern European country, and military and defense targets in the Middle East.
+* As of October 2018, Gallmaker has targeted government and military targets, including several overseas embassies of an Eastern European country, and military and defence targets in the Middle East.
 * The group uses living off the land (LotL) tactics and publicly available tools to carry out activities
 * The goal of the group appears to be espionage 
 
@@ -17,7 +17,7 @@ Other names the threat actor is known by.
 
 ## Campaign or Date Range
 * Date Range
-* About - [Targeting the overseas embassies of an Eastern European nation, a Middle Eastern defense contractor and a military organization](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group) 
+* About - [Targeting the overseas embassies of an Eastern European nation, a Middle Eastern defence contractor and a military organisation](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group) 
 * Active from - 01 December 2017
 * Active to - 30 June 2018
 
@@ -33,12 +33,12 @@ Other names the threat actor is known by.
 * Execution
   * [Dynamic Data Exchange](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
   * These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content” (See Figure 1). Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system.
-* Persistance
+* Persistence
   * [Web Shell](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
   * Once the Gallmaker attackers gain access to a device, they execute various tools. WindowsRoamingToolsTask is used to schedule PowerShell scripts and tasks. A "reverse_tcp" payload from Metasploit is used. The attackers use obfuscated shellcode that is executed via PowerShell to download this reverse shell. The Rex PowerShell library, which is publicly available on GitHub, is also seen on victim machines. This library helps create and manipulate PowerShell scripts for use with Metasploit exploits. 
 * Privilege Escalation 
   * No information
-* Defense Evasion 
+* Defence Evasion 
   * No information
 * Credential Access
   * No information
@@ -70,7 +70,6 @@ Other names the threat actor is known by.
 * [No information](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
 
 ### Intrusion Set
-A grouped set of adversarial behaviors and resources with common properties believed to be orchestrated by a single threat actor. These are represented as individual categories under the heading of Intrusion Set. If an existing category does not cover what you need to add, contact a project mantainer on panopticonproject at protonmail dot com to add a section to Charon.
 
 #### Malware
 * Names - [No information](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
@@ -148,22 +147,22 @@ A grouped set of adversarial behaviors and resources with common properties beli
   * Notes - Tracked as W97M.Downloader
 
 * Filename - [Navy.ro members list.docx](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-  * About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artifacts on disk. Once the Gallmaker attackers gain access to a device, they execute various tools.
+  * About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artefacts on disk. Once the Gallmaker attackers gain access to a device, they execute various tools.
   * Hash - No information
   * Notes - Tracked as W97M.Downloader
 
 * Filename - [БГ в чуждите медии 23.03.2018-1.docx](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-  * About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artifacts on disk. Once the Gallmaker attackers gain access to a device, they execute various tools.
+  * About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artefacts on disk. Once the Gallmaker attackers gain access to a device, they execute various tools.
   * Hash - No information
   * Notes - Tracked as W97M.Downloader
 
 * Filename - [[REDACTED] and cae join forces to develop integrated live virtual constructive training solutions.docx](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-  * About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artifacts on disk. Once the Gallmaker attackers gain access to a device, they execute various tools.
+  * About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artefacts on disk. Once the Gallmaker attackers gain access to a device, they execute various tools.
   * Hash - No information
   * Notes - Tracked as W97M.Downloader
 
 * Filename - [А-9237-18-brasil.docx](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-  * About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artifacts on disk. Once the Gallmaker attackers gain access to a device, they execute various tools.
+  * About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artefacts on disk. Once the Gallmaker attackers gain access to a device, they execute various tools.
   * Hash - No information
   * Notes - Tracked as W97M.Downloader
 
@@ -208,14 +207,14 @@ A grouped set of adversarial behaviors and resources with common properties beli
   * Monitor for file creation and files transferred within a network over SMB. 
   * Unusual processes with external network connections creating files on-system may be suspicious. 
   * Use of utilities, such as FTP, that does not normally occur may also be suspicious. 
-  * Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). 
+  * Analyse network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). 
   * Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. 
-  * Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used.
+  * Analyse packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used.
 
 ### Course of Action 
 * [Spearphishing Attachment](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
   * Network intrusion prevention systems and systems designed to scan and remove malicious email attachments can be used to block activity. 
-  * Block unknown or unused attachments by default that should not be transmitted over email as a best practice to prevent some vectors, such as .scr, .exe, .pif, .cpl, etc. Some email scanning devices can open and analyze compressed and encrypted formats, such as zip and rar that may be used to conceal malicious attachments in Obfuscated Files or Information.
+  * Block unknown or unused attachments by default that should not be transmitted over email as a best practice to prevent some vectors, such as .scr, .exe, .pif, .cpl, etc. Some email scanning devices can open and analyse compressed and encrypted formats, such as zip and rar that may be used to conceal malicious attachments in Obfuscated Files or Information.
   * Users can be trained to identify social engineering techniques and spearphishing emails. 
   * To prevent the attachments from executing, application whitelisting can be used. 
   * Anti-virus can also automatically quarantine suspicious files.
@@ -230,7 +229,7 @@ A grouped set of adversarial behaviors and resources with common properties beli
   * Follow best practices for network firewall configurations to allow only necessary ports and traffic to enter and exit the network. For example, if services like FTP are not required for sending information outside of a network, then block FTP-related ports at the network perimeter. Enforce proxies and use dedicated servers for services such as DNS and only allow those systems to communicate over respective ports/protocols, instead of all systems within a network. 
   * Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary command and control infrastructure and malware can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific obfuscation technique used by a particular adversary or tool, and will likely be different across various malware families and versions. 
 * [Remote File Copy](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-  * Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware or unusual data transfer over known tools and protocols like FTP can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific obfuscation technique used by a particular adversary or tool, and will likely be different across various malware families and versions.
+  * Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware or unusual data transfer over known tools and protocols like FTP can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific obfuscation technique used by a particular adversary or tool and will likely be different across various malware families and versions.
 
 ### YARA rules
 Rules for detecting indicators of compromise. State no information where the rule would be pasted if no information is available.
@@ -262,7 +261,7 @@ any of them
 * URL - https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group
 
 ### Reports
-* [Gallmaker: New Attack Group Eschews Malware to Live off the Land](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group) - Symantec researchers have uncovered a previously unknown attack group that is targeting government and military targets, including several overseas embassies of an Eastern European country, and military and defense targets in the Middle East. This group eschews custom malware and uses living off the land (LotL) tactics and publicly available hack tools to carry out activities that bear all the hallmarks of a cyber espionage campaign.
+* [Gallmaker: New Attack Group Eschews Malware to Live off the Land](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group) - Symantec researchers have uncovered a previously unknown attack group that is targeting government and military targets, including several overseas embassies of an Eastern European country, and military and defence targets in the Middle East. This group eschews custom malware and uses living off the land (LotL) tactics and publicly available hack tools to carry out activities that bear all the hallmarks of a cyber espionage campaign.
 
 ## Raw Intelligence 
 Any further notes to be added to the framework to be added here.
