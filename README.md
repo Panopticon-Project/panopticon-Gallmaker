@@ -174,17 +174,25 @@ A server used by the attackers to send commands to malware and to receive comman
 #### Tools
 A tool used by the attacker. Multiple names should be listed on the same line and separated by a comma. Functionality should be short, preferably one word. Example: keylogger. Multiple functionalites should be listed on the same line and separated by a comma. URL should be the online address, if any, the tool can be publically sourced from.
 * Names - [Name of malware](URL to source)
-* Functionality - [Functionality, functionality] (URL to source)
+* Functionality - [Downloads and executes malware from a remote location] (https://www.symantec.com/security-center/writeup/2014-110100-2117-99)
 * URL - http://address.com
-W97M.Downloader
-W97M.Downloader is a Word macro Trojan that downloads additional malware. W97M.Downloader is a malicious macro that may arrive as a Word document attachment in spam emails. When the Word document is opened, the macro attempts to download and execute malware from a remote location. Most spam campaigns spreading Dridex do so using attached Word documents containing a malicious macro. 
-Symantec detects these malicious attachments as  
-W97M.Downloader
-. If this macro is allowed to run, a 
-malicious .vbs file is dropped and executed. This file is detected as 
-VBS.Downloader.Trojan
-. . This malicious .vbs 
-file will in turn download and install Dridex on the victim’s computer. 
+
+* Names - [W97M.Downloader](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* Functionality - [Downloads and executes malware from a remote location] (https://www.symantec.com/security-center/writeup/2014-110100-2117-99)
+* URL - https://docs.microsoft.com/en-us/windows/desktop/dataxchg/about-dynamic-data-exchange
+
+* Names - [WindowsRoamingToolsTask](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* Functionality - [schedule PowerShell scripts and tasks] (https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* URL - https://social.technet.microsoft.com/wiki/contents/articles/38580.configure-to-run-a-powershell-script-into-task-scheduler.aspx
+
+* Names - [reverse_tcp payload](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* Functionality - [Obfuscated shellcode that is executed via PowerShell to download a reverse shell.] (https://www.symantec.com/security-center/writeup/2014-110100-2117-99)
+* URL - https://www.winzip.com/win/en/downcl.html
+
+* Names - [Ruby Exploitation(Rex) Powershell library](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+* Functionality - [Creates and manipulates PowerShell scripts for use with Metasploit exploits] (https://www.symantec.com/security-center/writeup/2014-110100-2117-99)
+* URL - https://github.com/rapid7/rex-powershell
+
 ## Time context ends 
 
 ### Detection
