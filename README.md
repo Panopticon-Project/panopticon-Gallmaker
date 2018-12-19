@@ -169,19 +169,19 @@ A grouped set of adversarial behaviors and resources with common properties beli
 
 #### Tools
 * Names - [W97M.Downloader](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-  * Functionality - [Downloads and executes malware from a remote location] (https://www.symantec.com/security-center/writeup/2014-110100-2117-99)
+  * Functionality - Downloads and executes malware from a remote location
   * URL - https://docs.microsoft.com/en-us/windows/desktop/dataxchg/about-dynamic-data-exchange
 
 * Names - [WindowsRoamingToolsTask](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-  * Functionality - [schedule PowerShell scripts and tasks] (https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * Functionality - Schedule PowerShell scripts and tasks
   * URL - https://social.technet.microsoft.com/wiki/contents/articles/38580.configure-to-run-a-powershell-script-into-task-scheduler.aspx
 
 * Names - [reverse_tcp payload](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-  * Functionality - [Obfuscated shellcode that is executed via PowerShell to download a reverse shell.] (https://www.symantec.com/security-center/writeup/2014-110100-2117-99)
+  * Functionality - Obfuscated shellcode that is executed via PowerShell to download a reverse shell
   * URL - https://www.winzip.com/win/en/downcl.html
 
 * Names - [Ruby Exploitation(Rex) Powershell library](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-  * Functionality - [Creates and manipulates PowerShell scripts for use with Metasploit exploits] (https://www.symantec.com/security-center/writeup/2014-110100-2117-99)
+  * Functionality - Creates and manipulates PowerShell scripts for use with Metasploit exploits
   * URL - https://github.com/rapid7/rex-powershell
 
 ## Time context ends 
