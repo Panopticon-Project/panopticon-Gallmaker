@@ -74,115 +74,115 @@ A grouped set of adversarial behaviors and resources with common properties beli
 
 #### Malware
 * Names - [No information](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* Functionality - N/A
-* Hash - N/A
-* Notes - N/A
+  * Functionality - N/A
+  * Hash - N/A
+  * Notes - N/A
 
 #### Website 
 * Name - [No information](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* About - N/A
-* URL - N/A
-* IP - N/A
-* Valid from - N/A
-* Valid to - N/A
+  * About - N/A
+  * URL - N/A
+  * IP - N/A
+  * Valid from - N/A
+  * Valid to - N/A
 
 #### Command and Control Server
 * IP - [111.90.149[.]99](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* Valid from - [01 January 2018](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* Valid to - [31 May 2018](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* SSH host key
-  * RSA - no information
-  * ECDSA - no information
-  * ED25519 - no information
-* SSL Certificate
-  * Issuer - no information
-  * Public key type - no information
-  * Public key bits - no information
-  * Signature algorithm - no information
-  * Not valid before - no information
-  * Not valid after - no information
-  * MD5 - no information
-  * SHA-1 - no information
-* Notes - Date range given in source is December 2017 to June 2018. As there is no exact date given, it is possible activity related to this address in early December and late June could be related to a different party. A date range of 01 January 2018 to 31 May 2018 is given here to avoid misattribution.
+  * Valid from - [01 January 2018](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * Valid to - [31 May 2018](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * SSH host key
+    * RSA - no information
+    * ECDSA - no information
+    * ED25519 - no information
+  * SSL Certificate
+    * Issuer - no information
+    * Public key type - no information
+    * Public key bits - no information
+    * Signature algorithm - no information
+    * Not valid before - no information
+    * Not valid after - no information
+    * MD5 - no information
+    * SHA-1 - no information
+  * Notes - Date range given in source is December 2017 to June 2018. As there is no exact date given, it is possible activity related to this address in early December and late June could be related to a different party. A date range of 01 January 2018 to 31 May 2018 is given here to avoid misattribution.
 
 * IP - [94.140.116[.]124](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* Valid from - [01 January 2018](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* Valid to - [31 May 2018](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* SSH host key
-  * RSA - no information
-  * ECDSA - no information
-  * ED25519 - no information
-* SSL Certificate
-  * Issuer - no information
-  * Public key type - no information
-  * Public key bits - no information
-  * Signature algorithm - no information
-  * Not valid before - no information
-  * Not valid after - no information
-  * MD5 - no information
-  * SHA-1 - no information
-* Notes - Date range given in source is December 2017 to June 2018. As there is no exact date given, it is possible activity related to this address in early December and late June could be related to a different party. A date range of 01 January 2018 to 31 May 2018 is given here to avoid misattribution.
+  * Valid from - [01 January 2018](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * Valid to - [31 May 2018](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * SSH host key
+    * RSA - no information
+    * ECDSA - no information
+    * ED25519 - no information
+  * SSL Certificate
+    * Issuer - no information
+    * Public key type - no information
+    * Public key bits - no information
+    * Signature algorithm - no information
+    * Not valid before - no information
+    * Not valid after - no information
+    * MD5 - no information
+    * SHA-1 - no information
+  * Notes - Date range given in source is December 2017 to June 2018. As there is no exact date given, it is possible activity related to this address in early December and late June could be related to a different party. A date range of 01 January 2018 to 31 May 2018 is given here to avoid misattribution.
 
 * IP - [94.140.116[.]231](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* Valid from - [01 January 2018](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* Valid to - [31 May 2018](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* SSH host key
-  * RSA - no information
-  * ECDSA - no information
-  * ED25519 - no information
-* SSL Certificate
-  * Issuer - no information
-  * Public key type - no information
-  * Public key bits - no information
-  * Signature algorithm - no information
-  * Not valid before - no information
-  * Not valid after - no information
-  * MD5 - no information
-  * SHA-1 - no information
-* Notes - Date range given in source is December 2017 to June 2018. As there is no exact date given, it is possible activity related to this address in early December and late June could be related to a different party. A date range of 01 January 2018 to 31 May 2018 is given here to avoid misattribution.
+  * Valid from - [01 January 2018](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * Valid to - [31 May 2018](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * SSH host key
+    * RSA - no information
+    * ECDSA - no information
+    * ED25519 - no information
+  * SSL Certificate
+    * Issuer - no information
+    * Public key type - no information
+    * Public key bits - no information
+    * Signature algorithm - no information
+    * Not valid before - no information
+    * Not valid after - no information
+    * MD5 - no information
+    * SHA-1 - no information
+  * Notes - Date range given in source is December 2017 to June 2018. As there is no exact date given, it is possible activity related to this address in early December and late June could be related to a different party. A date range of 01 January 2018 to 31 May 2018 is given here to avoid misattribution.
 
 #### Documents
 * Filename - [bg embassy list.docx](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artifacts on disk. Once the Gallmaker attackers gain access to a device, they execute various tools.
-* Hash - No information
-* Notes - Tracked as W97M.Downloader
+  * About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artifacts on disk. Once the Gallmaker attackers gain access to a device, they execute various tools.
+  * Hash - No information
+  * Notes - Tracked as W97M.Downloader
 
 * Filename - [Navy.ro members list.docx](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artifacts on disk. Once the Gallmaker attackers gain access to a device, they execute various tools.
-* Hash - No information
-* Notes - Tracked as W97M.Downloader
+  * About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artifacts on disk. Once the Gallmaker attackers gain access to a device, they execute various tools.
+  * Hash - No information
+  * Notes - Tracked as W97M.Downloader
 
 * Filename - [БГ в чуждите медии 23.03.2018-1.docx](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artifacts on disk. Once the Gallmaker attackers gain access to a device, they execute various tools.
-* Hash - No information
-* Notes - Tracked as W97M.Downloader
+  * About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artifacts on disk. Once the Gallmaker attackers gain access to a device, they execute various tools.
+  * Hash - No information
+  * Notes - Tracked as W97M.Downloader
 
 * Filename - [[REDACTED] and cae join forces to develop integrated live virtual constructive training solutions.docx](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artifacts on disk. Once the Gallmaker attackers gain access to a device, they execute various tools.
-* Hash - No information
-* Notes - Tracked as W97M.Downloader
+  * About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artifacts on disk. Once the Gallmaker attackers gain access to a device, they execute various tools.
+  * Hash - No information
+  * Notes - Tracked as W97M.Downloader
 
 * Filename - [А-9237-18-brasil.docx](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artifacts on disk. Once the Gallmaker attackers gain access to a device, they execute various tools.
-* Hash - No information
-* Notes - Tracked as W97M.Downloader
+  * About - The group delivers a malicious Office lure document to victims. These lure documents use titles with government, military, and diplomatic themes. The attackers use filenames that would be of interest to a variety of targets in Eastern Europe. These lure documents attempt to exploit the Microsoft Office Dynamic Data Exchange (DDE) protocol in order to gain access to victim machines. When the victim opens the lure document, a warning appears asking victims to “enable content”. Should a user enable this content, the attackers are then able to use the DDE protocol to remotely execute commands in memory on the victim’s system. By running solely in memory, the attackers avoid leaving artifacts on disk. Once the Gallmaker attackers gain access to a device, they execute various tools.
+  * Hash - No information
+  * Notes - Tracked as W97M.Downloader
 
 #### Tools
 * Names - [W97M.Downloader](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* Functionality - [Downloads and executes malware from a remote location] (https://www.symantec.com/security-center/writeup/2014-110100-2117-99)
-* URL - https://docs.microsoft.com/en-us/windows/desktop/dataxchg/about-dynamic-data-exchange
+  * Functionality - [Downloads and executes malware from a remote location] (https://www.symantec.com/security-center/writeup/2014-110100-2117-99)
+  * URL - https://docs.microsoft.com/en-us/windows/desktop/dataxchg/about-dynamic-data-exchange
 
 * Names - [WindowsRoamingToolsTask](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* Functionality - [schedule PowerShell scripts and tasks] (https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* URL - https://social.technet.microsoft.com/wiki/contents/articles/38580.configure-to-run-a-powershell-script-into-task-scheduler.aspx
+  * Functionality - [schedule PowerShell scripts and tasks] (https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
+  * URL - https://social.technet.microsoft.com/wiki/contents/articles/38580.configure-to-run-a-powershell-script-into-task-scheduler.aspx
 
 * Names - [reverse_tcp payload](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* Functionality - [Obfuscated shellcode that is executed via PowerShell to download a reverse shell.] (https://www.symantec.com/security-center/writeup/2014-110100-2117-99)
-* URL - https://www.winzip.com/win/en/downcl.html
+  * Functionality - [Obfuscated shellcode that is executed via PowerShell to download a reverse shell.] (https://www.symantec.com/security-center/writeup/2014-110100-2117-99)
+  * URL - https://www.winzip.com/win/en/downcl.html
 
 * Names - [Ruby Exploitation(Rex) Powershell library](https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group)
-* Functionality - [Creates and manipulates PowerShell scripts for use with Metasploit exploits] (https://www.symantec.com/security-center/writeup/2014-110100-2117-99)
-* URL - https://github.com/rapid7/rex-powershell
+  * Functionality - [Creates and manipulates PowerShell scripts for use with Metasploit exploits] (https://www.symantec.com/security-center/writeup/2014-110100-2117-99)
+  * URL - https://github.com/rapid7/rex-powershell
 
 ## Time context ends 
 
