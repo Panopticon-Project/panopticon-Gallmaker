@@ -232,29 +232,29 @@ Other names the threat actor is known by.
   * Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware or unusual data transfer over known tools and protocols like FTP can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific obfuscation technique used by a particular adversary or tool and will likely be different across various malware families and versions.
 
 ### YARA rules
-rule Suspicious_docx
-{
-meta:
-copyright = "Symantec"
-family = "Suspicious DOCX”
-group = "Gallmaker"
-description = "Suspicious file that might be Gallmaker”
+rule Suspicious_docx  
+{  
+meta:  
+copyright = "Symantec"  
+family = "Suspicious DOCX”  
+group = "Gallmaker"  
+description = "Suspicious file that might be Gallmaker”  
 
-strings:
-$quote = /<w:fldSimple w:instr=" QUOTE (( [^"]+)* [0-9]
+strings:  
+$quote = /<w:fldSimple w:instr=" QUOTE (( [^"]+)* [0-9]  
 
-{2,3}
+{2,3}  
 
-)
+)  
 
-{4}
+{4}  
 
-/
-$text = "select \"Update field\" and click \"OK\""
+/  
+$text = "select \"Update field\" and click \"OK\""  
 
-condition:
-any of them
-}
+condition:  
+any of them  
+}  
 * URL - https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group
 
 ### Reports
