@@ -232,9 +232,6 @@ Other names the threat actor is known by.
   * Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware or unusual data transfer over known tools and protocols like FTP can be used to mitigate activity at the network level. Signatures are often for unique indicators within protocols and may be based on the specific obfuscation technique used by a particular adversary or tool and will likely be different across various malware families and versions.
 
 ### YARA rules
-Rules for detecting indicators of compromise. State no information where the rule would be pasted if no information is available.
-Use list
-* Rule - Paste on next line
 rule Suspicious_docx
 {
 meta:
